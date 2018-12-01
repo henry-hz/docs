@@ -107,7 +107,7 @@ asssigned an external IP address.
 1. To find the host URL for your service, enter:
 
     ```shell
-    kubectl get ksvc helloworld-go  --output=custom-columns=NAME:.metadata.name,DOMAIN:.status.domain
+    kubectl get svc helloworld-go  --output=custom-columns=NAME:.metadata.name,DOMAIN:.status.domain
     NAME                DOMAIN
     helloworld-go       helloworld-go.default.example.com
     ```
